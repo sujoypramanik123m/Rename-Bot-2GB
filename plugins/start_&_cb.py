@@ -31,7 +31,7 @@ async def cb_handler(client, query: CallbackQuery):
                 [InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about'),
                 InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help')],
 		[InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Gʀᴏᴜᴘ •', url='https://t.me/SuperToppers'),
-		InlineKeyboardButton('• Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ •', url='https://t.me/SuperToppers0')]
+		InlineKeyboardButton('• Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ •', url='https://t.me/SuperToppers0')],
                 [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/UncleChipssBot')]
             ])
         )
