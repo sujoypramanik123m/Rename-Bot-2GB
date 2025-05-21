@@ -6,7 +6,7 @@ from helper.database import jishubotz
 async def add_caption(client, message):
 
     if len(message.command) == 1:
-        return await message.reply_text("**__Give The Prefix__\n\nExample:- `/set_prefix @TechifyBots`**")
+        return await message.reply_text("**__Give The Prefix__\n\nExample:- `/set_prefix @SuperToppers`**")
     prefix = message.text.split(" ", 1)[1]
     JishuDeveloper = await message.reply_text("Please Wait ...")
     await jishubotz.set_prefix(message.from_user.id, prefix)
@@ -40,7 +40,7 @@ async def see_caption(client, message):
 async def add_csuffix(client, message):
 
     if len(message.command) == 1:
-        return await message.reply_text("**__Give The Suffix__\n\nExample:- `/set_suffix @TechifyBots`**")
+        return await message.reply_text("**__Give The Suffix__\n\nExample:- `/set_suffix @SuperToppers`**")
     suffix = message.text.split(" ", 1)[1]
     JishuDeveloper = await message.reply_text("Please Wait ...")
     await jishubotz.set_suffix(message.from_user.id, suffix)
