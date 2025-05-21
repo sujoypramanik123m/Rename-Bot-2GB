@@ -113,10 +113,8 @@ class Txt(object):
 """
 
     SEND_METADATA = """🖼️ 𝗛𝗼𝘄 𝗧𝗼 𝗦𝗲𝘁 𝗖𝘂𝘀𝘁𝗼𝗺 𝗠𝗲𝘁𝗮𝗱𝗮𝘁𝗮
-
-For Example :-
-
-<code>By: @SuperToppers</code>
+➲ /metadata: ᴛᴏ ꜱᴇᴛ ᴍᴇᴛᴀᴅᴀᴛᴀ
+ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴇᴛ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴄʟɪᴄᴋ ᴏɴ sᴇᴛ ᴄᴜsᴛᴏᴍ ᴍᴇᴛᴀᴅᴀᴛᴀ
 
 💬 For Help Contact @SuperToppers0
 """
