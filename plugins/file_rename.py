@@ -92,8 +92,8 @@ async def doc(bot, update):
     file = update.message.reply_to_message
 
     try:
-        if update.message.text != "🚀 Try To Download...  ⚡":
-            ms = await update.message.edit("🚀 Try To Download...  ⚡")
+        if update.message.text != "🚀 Trying To Download...  ⚡":
+            ms = await update.message.edit("🚀 Trying To Download...  ⚡")
     except Exception as e:
         print(f"Error editing message: {e}")
     
@@ -154,8 +154,8 @@ async def doc(bot, update):
                 print(e)  
 
     try:
-        if update.message.text != "💠 Try To Upload...  ⚡":
-            await ms.edit("💠 Try To Upload...  ⚡")
+        if update.message.text != "💠 Trying To Upload...  ⚡":
+            await ms.edit("💠 Trying To Upload...  ⚡")
     except Exception as e:
         print(f"Error editing message: {e}")
     
