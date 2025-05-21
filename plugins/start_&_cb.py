@@ -10,8 +10,8 @@ async def start(client, message):
     user = message.from_user
     await jishubotz.add_user(client, message)                
     button = InlineKeyboardMarkup([
-        [InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about'),
-        InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help')],
+        [InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about'),
+        InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help')],
         [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/UncleChipssBot')]
     ])
     if Config.START_PIC:
@@ -28,8 +28,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup([
-                [InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about'),
-                InlineKeyboardButton('• ʜᴇʟᴘ •', callback_data='help')],
+                [InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about'),
+                InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help')],
+		[InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Gʀᴏᴜᴘ •', url='https://t.me/SuperToppers'),
+		InlineKeyboardButton('• Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ •', url='https://t.me/SuperToppers0')]
                 [InlineKeyboardButton("♻ ᴅᴇᴠᴇʟᴏᴘᴇʀ ♻", url='https://telegram.me/UncleChipssBot')]
             ])
         )
@@ -51,7 +53,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.SEND_METADATA,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ])
 	)
 
@@ -59,7 +61,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.PREFIX,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ])
 	)
 
@@ -67,7 +69,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.SUFFIX,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ])
 	)
 
@@ -75,7 +77,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.CAPTION_TXT,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ])
 	)
 
@@ -83,7 +85,7 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.THUMBNAIL_TXT,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data="help"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ])
 	)
 
@@ -92,9 +94,9 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.ABOUT_TXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("👨‍💻  ʀᴇᴘᴏ", url="https://github.com/TechifyBots"),
-                InlineKeyboardButton("💥  ᴅᴏɴᴀᴛᴇ", callback_data="donate")],
-		[InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start")]
+                [InlineKeyboardButton("👨‍💻  Rᴇᴘᴏ", url="https://github.com"),
+                InlineKeyboardButton("💥  Dᴏɴᴀᴛᴇ", callback_data="donate")],
+		[InlineKeyboardButton("Hᴏᴍᴇ", callback_data="start")]
             ])            
         )
 
@@ -103,9 +105,9 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.DONATE_TXT,
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🤖 ᴍᴏʀᴇ ʙᴏᴛs", url="https://telegram.me/TechifyBots/8")],
-                [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data = "about"),
-                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data = "close")]
+                [InlineKeyboardButton("🤖 Mᴏʀᴇ Bᴏᴛs", url="https://telegram.me/ProToppers")],
+                [InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "about"),
+                InlineKeyboardButton("Cʟᴏsᴇ", callback_data = "close")]
             ])            
 	)
 
